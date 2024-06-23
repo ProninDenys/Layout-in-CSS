@@ -4,8 +4,9 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .container {
@@ -31,9 +32,30 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .grid-item img {
     width: 100%;
     height: auto;
     display: block;
 }
 
+.photo {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(50% - 20px); /* Two photos per row with some gap */
+    max-width: 400px;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+}
