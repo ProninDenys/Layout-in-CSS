@@ -4,9 +4,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
-    padding: 20 px;
+    padding: 0;
 }
 
 .container {
@@ -21,7 +20,7 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -30,25 +29,13 @@ h1 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .grid-item img {
-    width: 100%;
+    width: auto;
     height: auto;
     display: block;
-}
+    object-fit: cover;
 
-.photo {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: calc(50% - 20px); /* Two photos per row with some gap */
-    max-width: 400px;
-    position: relative;
-}
-
-.photo img {
-    width: 100%;
-    display: block;
 }
